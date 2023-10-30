@@ -1,4 +1,8 @@
 /* Colors and fonts */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1A1A1A;
   color: #313131;
@@ -239,7 +243,31 @@ i::before:hover {
   filter: grayscale(1);
 }
 
-
 .tech-icon:hover {
   filter: grayscale(0);
+}
+
+.form-container {
+  text-align: left;
+  width: 96%;
+  margin: 0 auto;
+}
+
+input, textarea, select {
+  width: 96%;
+  border-radius: 5px;
+  background: #ddd;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+select#country {
+  width: 102%;
+}
+
+input[type="submit" i] {
+  width: 100%;
 }
