@@ -239,6 +239,7 @@ i::before:hover {
   filter: grayscale(1);
 }
 
+
 .tech-icon:hover {
   filter: grayscale(0);
 }
