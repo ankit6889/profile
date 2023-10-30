@@ -277,6 +277,7 @@ input[type="submit" i] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .icon-wrapper {
