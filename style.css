@@ -2,7 +2,7 @@
 body {
   background: #1A1A1A;
   color: #313131;
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', serif;
   font-size: 17px;
   font-weight: lighter;
 }
@@ -57,6 +57,10 @@ i::before:hover {
   margin: 50px auto;
 }
 
+#introduction {
+  margin-top: 140px;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 4px 4px 8px 0 rgba(255,255,255,0.8);
@@ -74,12 +78,23 @@ i::before:hover {
 
 .profile_image {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: -150px;
+  background: wheat;
 }
 
 #introduction p {
-  padding: 20px 0 40px 0;
+  padding: 0;
+  margin: 0 0 4px 0;
 }
 
 /* Media Queries */
@@ -165,4 +180,65 @@ i::before:hover {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+/* End of Button Animation */
+
+/* Text Animation */
+.animate-charcter
+{
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* End of Text Animation */
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.intro-title:hover .static{
+  opacity:0;
+}
+
+.wink-gif {
+  height: 50px;
+  width: 50px;
+  margin-bottom: -8px;
+}
+
+.description-txt {
+  padding: 20px 0;
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  filter: grayscale(1);
+}
+
+.tech-icon:hover {
+  filter: grayscale(0);
 }
